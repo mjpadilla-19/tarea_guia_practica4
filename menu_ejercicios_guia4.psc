@@ -387,7 +387,7 @@ Funcion impares_arreglos
 	Escribir "Los numeros"
 	Mientras i <= 8 Hacer
 		si num[i] mod 2 <> 0 Entonces
-			Escribir "Imares son : ", num[i]
+			Escribir "Impares son : ", num[i]
 		FinSi
 		i = i + 1
 	FinMientras
