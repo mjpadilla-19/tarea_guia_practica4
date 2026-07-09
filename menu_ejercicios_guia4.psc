@@ -68,7 +68,7 @@ Funcion estudiante_aprueba_repuerba
 	Definir notas Como Real
 	Escribir "ingrese la nota del estudiante"; leer notas
 	si notas >= 7 Entonces
-		Escribir " !FELICIDADES¡ Aprueba"
+		Escribir " !FELICIDADESÂ¡ Aprueba"
 	SiNo
 		si notas >= 5 y notas < 7 Entonces
 			Escribir "SUPLETORIO"
@@ -87,7 +87,7 @@ Funcion clasifica_triangulo
 		Escribir "Es un triangulo EQUILATERO"
 	SiNo
 		si lado1 = lado2 o lado2 = lado3 Entonces
-			Escribir "Es un triangulo ISÓSCELES"
+			Escribir "Es un triangulo ISÃ“SCELES"
 		SiNo
 			Escribir "Es un triangulo ESCALENO"
 		FinSi
@@ -316,7 +316,7 @@ FinFuncion
 
 Funcion llenar_arreglo
     Definir n, i Como Entero
-    Dimension arr[100] // <-- nombre + tamaño juntos
+    Dimension arr[100] // <-- nombre + tamaÃ±o juntos
 	
     Escribir "Cuantos numeros quieres guardar (max 100)? "
     Leer n
@@ -421,12 +421,14 @@ Funcion promedio_arreglo
 	num[4] <- 10
 	num[5] <- 34
 	num[6] <- 50
+	Escribir "Los valores son los siguientes :"
 	Mientras i <= 6 Hacer
-		sumas = sumas + num[i]
+		Escribir " num[", i, "] = ", num[i]
+		sumas <- sumas + num[i]
 		i <- i + 1
 	FinMientras
 		promedio <- sumas / 6
-		Escribir "El promedio es: ", promedio
+		Escribir "El promedio de dichos valores es: ", promedio
 FinFuncion
 
 funcion sueldo_basico
@@ -438,6 +440,7 @@ funcion sueldo_basico
 	sueldos[3] <- 800
 	sueldos[4] <- 750
 	sueldos[5] <- 1000
+	Escribir "Los sueldos son los siguientes:"
 	Mientras i <= 5 Hacer
 		si sueldos[i] > 400 Entonces
 			can <- can + 1
@@ -462,7 +465,7 @@ Funcion incremento_arreglos
 		si precios[i] > 100 Entonces
 			incremento <- precios[i] * 0.10
 			total <-  precios[i] + incremento
-			Escribir "Los precios mayores son: ", precios[i], " el total con incremento es: ", total
+			Escribir "Los precios mayores son: ", precios[i], " el total a pagar con incremento es: ", total
 		FinSi
 		i <- i + 1
 	FinMientras
@@ -560,14 +563,14 @@ FinFuncion
 Funcion signos_cadena
     Definir frase, signos, carac Como Cadena
     Definir i, largo Como Entero
-    frase <- "Bienvenido Padilla, ¿Que haces?"
-    signos <- ",.!?;:¿¡"
+    frase <- "Bienvenido Padilla, Â¿Que haces?"
+    signos <- ",.!?;:Â¿Â¡"
     largo <- Longitud(frase)
     i <- 1
     Escribir "Signos Encontrados"
     Mientras i <= largo Hacer
         carac <- Subcadena(frase, i, i)
-		Si carac = "," o carac = "." o carac = "!" o carac = "?" o carac = ";" o carac = ":" o carac = "¿" o carac = "¡" Entonces
+		Si carac = "," o carac = "." o carac = "!" o carac = "?" o carac = ";" o carac = ":" o carac = "Â¿" o carac = "Â¡" Entonces
             Escribir carac, " (posicion ", i, ")"
         FinSi        
 		i <- i + 1
@@ -602,44 +605,44 @@ Algoritmo menu_ejercicios
 		Escribir "MENU DE EJERCICIOS"
 		Escribir "==============================================="
 		Escribir "1) Suma de dos numeros"
-		Escribir "2) Verificar si un número es par o impar"
+		Escribir "2) Verificar si un nÃºmero es par o impar"
 		Escribir "3) Determinar si una persona es mayor o menor de edad"
-		Escribir "4) Comparar dos números y presentar el mayor"
-		Escribir "5) Comparar tres números y presentar el mayor"
-		Escribir "6) Calcular el descuento de una compra según el monto"
+		Escribir "4) Comparar dos nÃºmeros y presentar el mayor"
+		Escribir "5) Comparar tres nÃºmeros y presentar el mayor"
+		Escribir "6) Calcular el descuento de una compra segÃºn el monto"
 		Escribir "7) Determinar si un estudiante aprueba, supletorio o reprueba"
-		Escribir "8) Clasificar un triángulo (Equilátero, Isósceles o Escaleno)"
-		Escribir "9) Seleccionar una opción utilizando la estructura Según"
-		Escribir "10) Presentar los números del 1 hasta N."
-		Escribir "11) Sumar los primeros N números."
-		Escribir "12) Presentar los números pares entre 1 y N"
-		Escribir "13) Sumar los números pares entre 1 y N"
-		Escribir "14) Presentar los múltiplos de 3"
-		Escribir "15) Presentar los múltiplos de otro número"
+		Escribir "8) Clasificar un triÃ¡ngulo (EquilÃ¡tero, IsÃ³sceles o Escaleno)"
+		Escribir "9) Seleccionar una opciÃ³n utilizando la estructura SegÃºn"
+		Escribir "10) Presentar los nÃºmeros del 1 hasta N."
+		Escribir "11) Sumar los primeros N nÃºmeros."
+		Escribir "12) Presentar los nÃºmeros pares entre 1 y N"
+		Escribir "13) Sumar los nÃºmeros pares entre 1 y N"
+		Escribir "14) Presentar los mÃºltiplos de 3"
+		Escribir "15) Presentar los mÃºltiplos de otro nÃºmero"
 		Escribir "16) Tabla de multiplicar"
-		Escribir "17) Multiplicación mediante sumas sucesivas"
+		Escribir "17) MultiplicaciÃ³n mediante sumas sucesivas"
 		Escribir "18) Potencia mediante multiplicaciones sucesivas"
-		Escribir "19) Factorial de un número"
-		Escribir "20) Presentar los divisores de un número"
-		Escribir "21) Determinar si un número es perfecto"
-		Escribir "22) Determinar si un número es primo"
+		Escribir "19) Factorial de un nÃºmero"
+		Escribir "20) Presentar los divisores de un nÃºmero"
+		Escribir "21) Determinar si un nÃºmero es perfecto"
+		Escribir "22) Determinar si un nÃºmero es primo"
 		Escribir "23) Serie de Fibonacci"
-		Escribir "24) Contar cuántos números son pares"
+		Escribir "24) Contar cuÃ¡ntos nÃºmeros son pares"
 		Escribir "25) Llenar un arreglo"
 		Escribir "26) Presentar los elementos del arreglo"
-		Escribir "27) Presentar únicamente los números pares del arreglo"
-		Escribir "28) Presentar únicamente los números impares del arreglo"
+		Escribir "27) Presentar Ãºnicamente los nÃºmeros pares del arreglo"
+		Escribir "28) Presentar Ãºnicamente los nÃºmeros impares del arreglo"
 		Escribir "29) Calcular la suma de los elementos del arreglo"
 		Escribir "30) Calcular el promedio del arreglo"
-		Escribir "31) Presentar los sueldos mayores al salario básico"
+		Escribir "31) Presentar los sueldos mayores al salario bÃ¡sico"
 		Escribir "32) Incrementar el 10% a precios mayores a $100"
 		Escribir "33) Buscar el mayor elemento del arreglo"
 		Escribir "34) Buscar el menor elemento del arreglo"
-		Escribir "35) Presentar cada carácter de una cadena"
-		Escribir "36) Presentar únicamente las vocales"
-		Escribir "37) Presentar únicamente las consonantes"
-		Escribir "38) Presentar únicamente los signos de puntuación" 
-		Escribir "39) Contar el número de palabras de una frase"
+		Escribir "35) Presentar cada carÃ¡cter de una cadena"
+		Escribir "36) Presentar Ãºnicamente las vocales"
+		Escribir "37) Presentar Ãºnicamente las consonantes"
+		Escribir "38) Presentar Ãºnicamente los signos de puntuaciÃ³n" 
+		Escribir "39) Contar el nÃºmero de palabras de una frase"
 	    Escribir "0) SALIR"
 		Escribir "Ingrese opcion[1...40]";leer opc
 		Borrar Pantalla
@@ -681,12 +684,12 @@ Algoritmo menu_ejercicios
 				estudiante_aprueba_repuerba() 
 			"8":
 				Escribir "=============================================="
-				Escribir "    TRIÁNGULO (EQUILÁTERO, ISÓSCELES O ESCALENO)"
+				Escribir "    TRIÃNGULO (EQUILÃTERO, ISÃ“SCELES O ESCALENO)"
 				Escribir "=============================================="
 				clasifica_triangulo()
 			"9":
 				Escribir "=============================================="
-				Escribir "    SELECCIONE SEGUN LA OPCIÓN"
+				Escribir "    SELECCIONE SEGUN LA OPCIÃ“N"
 				Escribir "=============================================="
 				segun_opcion() 
 			"10":
