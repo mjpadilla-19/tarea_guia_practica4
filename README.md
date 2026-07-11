@@ -1,12 +1,26 @@
-# tarea_guia_practica4
-Guía práctica 4 – Algoritmos en PSeInt – Lógica de Programación 
+# Practica_Experimental_2
+volumenes en solidos de revolucion mediante integrales
 
-  **Materia:** Lógica de Programación
+  **Materia:** Calculo
      
-  **Autor:** Marco Padilla
-
+ ## Autores:
+- **Marco Padilla**
+- **Héctor Ramón**
+- **Jared Semper**
+- **Alejandro Cruz**
 # Descripción
-Repositorio con los ejercicios de la guía práctica 4 desarrollados en PSeInt.
+- **Repositorio_1 : ejercicio.py**
+Es la verdión gráfica del ejercicio propuesto por el ingeniero
+- **Repositorio_2 : métodos de volumenes**
+es la versión gráfica de cada metodo, al copiar y ejecutar el código podra interactuar con los gráficos 
 
-# Archivos
-menú_ejercicios_guia4.psc – Menú principal que integra los ejercicios propuestos por el Ingeniero
+# Nota Importante:
+En el segundo repositorio donde se encuentra los 3 métodos 
+- METODO ='' debera ingresar la palabra:
+- disco 
+- arandelas
+- cascos
+
+se debe ingrsar cualquiera de esas palabras para que se pueda ejecutar la gráfica correctamente
+
+# Nota_2:
