@@ -8,6 +8,7 @@ volumenes en solidos de revolucion mediante integrales
 - **Héctor Ramón**
 - **Jared Semper**
 - **Alejandro Cruz**
+- **Sheyla Cruz**
 # Descripción
 - **Repositorio_1 : ejercicio.py**
 Es la verdión gráfica del ejercicio propuesto por el ingeniero
